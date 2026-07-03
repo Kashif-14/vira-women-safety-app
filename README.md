@@ -268,7 +268,7 @@ Deployed on **Render** (Singapore) — auto-deploys on every `git push` to `main
 
 | Link | Purpose |
 |------|---------|
-| [API Docs]((https://vira-backend-qeog.onrender.com/docs)) | Swagger UI |
+| [API Docs](https://vira-backend-qeog.onrender.com/docs) | Swagger UI |
 | [Health Check](https://vira-backend-qeog.onrender.com/health) | Server status |
 | [Admin Dashboard](https://vira-backend-qeog.onrender.com/static/admin/index.html) | Admin panel |
 
