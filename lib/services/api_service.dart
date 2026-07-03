@@ -3,12 +3,18 @@
 // Added getRaw() to handle endpoints that return a list directly.
 
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiService {
   // 🔧 Dev: http://10.0.2.2:8000  |  Prod: https://your-app.railway.app
-  static const String baseUrl = 'http://192.168.10.11:8000';
+  // static const String baseUrl = 'http://192.168.10.11:8000';
+
+  static const String _localUrl = 'http://10.0.2.2:8000';
+  static const String _productionUrl = 'https://vira-backend.onrender.com';
+
+  static String get baseUrl => kReleaseMode ? _productionUrl : _localUrl;
 
   // ── Token Storage ─────────────────────────────────────────────────────────
 
