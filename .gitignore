@@ -45,3 +45,5 @@ ios/.symlinks/
 # ─── OS ───────────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+
+lib/firebase_options.dart
