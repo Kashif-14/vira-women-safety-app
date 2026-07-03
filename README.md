@@ -270,7 +270,7 @@ Deployed on **Render** (Singapore) — auto-deploys on every `git push` to `main
 |------|---------|
 | [API Docs](https://vira-backend-qeog.onrender.com/docs) | Swagger UI |
 | [Health Check](https://vira-backend-qeog.onrender.com/health) | Server status |
-| [Admin Dashboard](https://vira-backend-qeog.onrender.com/static/admin/index.html) | Admin panel |
+| [Admin Dashboard](https://vira-backend-qeog.onrender.com/admin-dashboard/) | Admin panel |
 
 > ⚠️ Free tier sleeps after 15 min of inactivity. First request may take ~30 seconds to wake up.
 
