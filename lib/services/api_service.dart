@@ -12,7 +12,7 @@ class ApiService {
   // static const String baseUrl = 'http://192.168.10.11:8000';
 
   static const String _localUrl = 'http://10.0.2.2:8000';
-  static const String _productionUrl = 'https://vira-backend.onrender.com';
+  static const String _productionUrl = 'https://vira-backend-qeog.onrender.com';
 
   static String get baseUrl => kReleaseMode ? _productionUrl : _localUrl;
 
