@@ -44,14 +44,14 @@ app.include_router(admin_router)     # /admin/stats, /admin/users, /admin/alerts
 
 
 # ── Admin dashboard (static HTML/CSS/JS) ────────────────────────────────────────
-# Served at /admin-dashboard/  →  /admin-dashboard/index.html
-# Calls the /admin/* API endpoints above using a JWT obtained via /auth/login.
-app.mount(
-    "/admin-dashboard",
-    StaticFiles(directory="static/admin", html=True),
-    name="admin-dashboard",
-)
-
+import os
+static_admin_dir = os.path.join(os.path.dirname(__file__), "static", "admin")
+if os.path.exists(static_admin_dir):
+    app.mount(
+        "/admin-dashboard",
+        StaticFiles(directory=static_admin_dir, html=True),
+        name="admin-dashboard",
+    )
 
 @app.get("/", tags=["Health"])
 async def root():
